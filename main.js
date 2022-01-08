@@ -42,6 +42,11 @@ console.log(s.toUpperCase());
 console.log(s.split(''));
 //console.log(s.length);
 
+//arrays
+//Testing for git connection 
+
+
+
 
 
 
