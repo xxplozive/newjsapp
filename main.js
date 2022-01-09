@@ -21,7 +21,7 @@ console.log('This page is maintained by', owner,'-', 'His age is '+ age);
 
 const isAlive = true;
 const rating = 4.5; //no float or decimal datatype in Javascript
-const x = null; 
+//const x = null; 
 const y = undefined;
 
 console.log (typeof y);
@@ -79,7 +79,7 @@ const todos = [
     {
         id: 1,
         text: 'Take out trash',
-        isCompleted: false
+        isCompleted: true
         
     },
     {
@@ -96,8 +96,65 @@ const todos = [
 
 console.log(todos[2].text);
 
+//JSON objects 
 const todosJSON = JSON.stringify(todos);
 console.log(todosJSON);
+
+//Loops
+
+for (let i =0; i <= 10; i++){
+
+    console.log(`The latest number is ${i}`);
+
+};
+
+let x = 0;
+while(x < 10){
+
+    console.log(`While loop number is: ${x}`);
+    x++;
+}
+
+//traverse an array 
+/*
+for (let i=0; i < todos.length; i++) {
+
+    console.log(todos[i].text);
+
+};
+*/
+
+for(let todo of todos) { 
+    console.log(todo.text);
+
+};
+
+//high order array method, forEach, map, filter
+todos.forEach(function(todo) {
+    console.log(todo.id);
+});
+const todoJustText = todos.map(function(todo){
+    return todo.text;
+});
+
+const todoCompleted = todos.filter(function(todo) {
+    return todo.isCompleted === true;
+});
+
+console.log(todoCompleted);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
