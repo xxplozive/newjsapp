@@ -9,7 +9,7 @@
 // var was the original variable but we don't want to use it any more
 
 const owner = 'Kartik Nath';
-const age = 43;
+const age = 42;
 //let age = 30;
 //age = 31;
 
@@ -45,7 +45,59 @@ console.log(s.split(''));
 //arrays
 //Testing for git connection 
 
+const dob = new Array(10, 12, 7, 6);
+const randomStuff = ['anaaya','nilu','niko', 12, 10, 6];
+dob.push('july');
+randomStuff.push('kartik');
 
+dob.pop();
+randomStuff.pop();
+
+console.log(dob);
+console.log(randomStuff);
+
+//Object literals
+
+const person = {
+    firstName: 'Kartik',
+    lastName: 'Nath',
+    age: 42,
+    hobbies: ['sports', 'movies', 'golf', 'tech-videos'], 
+    address: {
+        street: '83-40 austin street',
+        city: 'Kew Gardens',
+        state: "NY"
+    }
+}
+
+person.email = 'kartiknath@gmail.com';
+console.log(person);
+console.log(person.hobbies[2]);
+
+//array of objects 
+const todos = [
+    {
+        id: 1,
+        text: 'Take out trash',
+        isCompleted: false
+        
+    },
+    {
+        id: 2,
+        text: 'Meeting with boss',
+        isCompleted: true
+    },
+    {
+        id: 3,
+        text: 'Dentist appt',
+        isCompleted: false
+    }
+];
+
+console.log(todos[2].text);
+
+const todosJSON = JSON.stringify(todos);
+console.log(todosJSON);
 
 
 
