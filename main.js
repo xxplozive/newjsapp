@@ -139,9 +139,27 @@ const todoJustText = todos.map(function(todo){
 
 const todoCompleted = todos.filter(function(todo) {
     return todo.isCompleted === true;
+}).map(function(todo){
+    return todo.text;
 });
 
 console.log(todoCompleted);
+
+
+//conditional 
+
+const z = '10'; 
+if (z == 10){
+    console.log('z is 10');
+}else{
+    console.log('z is not 10')
+}
+
+
+
+
+
+
 
 
 const t = 6;
