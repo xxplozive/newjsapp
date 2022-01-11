@@ -144,6 +144,39 @@ const todoCompleted = todos.filter(function(todo) {
 console.log(todoCompleted);
 
 
+const t = 6;
+const u = 10;
+
+if (t > 5 || u > 10){
+
+    console.log('x is more than 5 or y is more than 10');
+
+}
+
+
+//ternary operator
+const a = 9;
+
+const color = a > 10 ? 'blue' : 'red';
+color = 'green';
+console.log(color);
+
+//switches
+
+
+switch(color){
+    case 'red':
+        console.log('color is red');
+        break;
+    case 'blue':
+        console.log('color is blue');
+        break;
+    default:
+        console.log('color is unknown');
+
+}
+
+
 
 
 
