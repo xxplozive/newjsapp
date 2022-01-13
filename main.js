@@ -176,7 +176,6 @@ if (t > 5 || u > 10){
 const a = 9;
 
 const color = a > 10 ? 'blue' : 'red';
-color = 'green';
 console.log(color);
 
 //switches
@@ -193,6 +192,21 @@ switch(color){
         console.log('color is unknown');
 
 }
+
+function getUser(name) {
+return "my name is " + name;
+
+}
+
+console.log(getUser("Kartik"));
+
+function getLast(anyNumber) {
+    return "the last number is "+ anyNumber; 
+}
+
+console.log(getLast(42));
+
+
 
 
 
